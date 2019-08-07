@@ -11,12 +11,7 @@ export class AuthGuard implements CanActivate {
   constructor(private authService: AuthService, private router: Router) { }
 
   canActivate(): Observable<boolean> | Promise<boolean> | boolean {
-    if (this.authService.isLoggedIn()) {
-      this.router.navigate(['dashboard']);
-      return false;
-    } else {
-      return true;
-    }
+    return this.authService.isLoggedIn();
   }
 
 }
