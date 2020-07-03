@@ -1,4 +1,4 @@
 /*
   # X-Frame-Options: SAMEORIGIN
-  Content-Security-Policy: frame-ancestors 'self';
+  Content-Security-Policy: frame-ancestors 'self' http://localhost:4200;
   X-XSS-Protection: 1; mode=block
