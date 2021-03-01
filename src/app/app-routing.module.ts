@@ -9,7 +9,7 @@ const routes: Routes = [
     loadChildren: () => import('./protected/protected.module').then(m => m.ProtectedModule)
   },
   {
-    path: '',
+    path: 'public',
     loadChildren: () => import('./public/public.module').then(m => m.PublicModule)
   },
   //https://stackoverflow.com/questions/55365464/same-url-path-but-loading-different-components-based-on-user-role-angular
